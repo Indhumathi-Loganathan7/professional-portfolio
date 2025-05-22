@@ -1,0 +1,131 @@
+/* Reset and smooth scroll */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #111;
+}
+
+/* Navbar */
+nav {
+  background: #222;
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00f0ff;
+}
+
+/* Hero section */
+#hero {
+  height: 100vh;
+  background: linear-gradient(-45deg, #1f1c2c, #928dab, #1f1c2c, #928dab);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Projects */
+#projects {
+  padding: 4em 2em;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.project-card {
+  background: #333;
+  padding: 1.5em;
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: #444;
+}
+
+/* Contact Form */
+#contact {
+  padding: 4em 2em;
+  text-align: center;
+  background-color: #111;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input, textarea {
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  padding: 0.8em;
+  background: #00f0ff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0ff;
+}

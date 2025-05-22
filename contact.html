@@ -1,0 +1,76 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Indhumathi</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="navbar">
+    <h1 class="logo">Indhumathi</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <div class="container contact-container">
+      <div class="contact-details">
+        <h2 class="section-title">Contact Details</h2>
+        <p><strong>Address:</strong> 35, K.V.R Nagar, Tiruppur, Tamil Nadu, India.</p>
+        <p><strong>Phone:</strong> +91 8220622422</p>
+        <p><strong>Email:</strong> <a href="mailto:mathi.mern@gmail.com">mathi.mern@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/indhumathi-loganathan-587746351/" target="_blank"
+            rel="noopener">https://www.linkedin.com/in/indhumathi-loganathan-587746351/</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Indhumathi-Loganathan7" target="_blank"
+            rel="noopener">https://github.com/Indhumathi-Loganathan7</a></p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h2 class="section-title">Get in Touch</h2>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+        <!-- Hidden checkbox to toggle modal -->
+        <input type="checkbox" id="showAck" class="modal-toggle" hidden />
+
+        <!-- Label as a button -->
+        <label for="showAck" class="submit-button">Send Message</label>
+
+        <!-- Modal -->
+        <div class="modal">
+          <div class="modal-content">
+            <p>✅ Thank you! Your message has been sent.</p>
+            <label for="showAck" class="close-button">Close</label>
+          </div>
+        </div>
+      </form>
+
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Indhumathi. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

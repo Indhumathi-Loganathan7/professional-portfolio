@@ -1,0 +1,104 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff8f0;
+  color: #3a3a3a;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #d1495b;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.3rem;
+  letter-spacing: 2px;
+}
+
+/* Menu container */
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Menu category */
+.menu-category {
+  margin-bottom: 3rem;
+}
+
+.menu-category h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid #d1495b;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #d1495b;
+}
+
+/* Menu list */
+.menu-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-category li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.menu-category li:hover {
+  background-color: #d1495b;
+  color: white;
+  box-shadow: 0 6px 15px rgb(209 73 91 / 0.4);
+}
+
+.menu-category li:hover .price {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Dish name and price */
+.dish-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  align-self: center;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.1rem;
+  align-self: center;
+  color: #d1495b;
+  transition: color 0.3s ease;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .menu-category li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    margin-top: 0.3rem;
+  }
+}
